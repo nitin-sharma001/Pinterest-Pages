@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#gola{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav-part2 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+#nav-part2 h4 span{
+    color: grey;
+    margin-left: 25px;
+
+}
+
+#nav2{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 40px;
+}
+#nav2 h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#content{
+    height: calc(100% - 150px);
+    width: 100%;
+}
+#text-content{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:  auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    height: 5px;
+    width: 10%;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size: 100px;
+    font-weight: 100;
+}
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* @media (max-width  :600px) {
+    
+#nav{
+    height: 60px;
+    width: 100%;
+    
+    padding: 0 25px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+} */
